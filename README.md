@@ -1,18 +1,19 @@
-# Unit 18 PWA Homework: Online/Offline Budget Trackers
+# Budget Tracker
 
-Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
+ ![Node.js](https://img.shields.io/badge/Built_with-Node.js-purple) &nbsp;&nbsp;&nbsp; 	 
+ ![MongoDB](https://img.shields.io/badge/Database-MongoDB-orange) &nbsp;&nbsp;&nbsp; 	 
+ ![Mongoose](https://img.shields.io/badge/Database_Management-Mongoose-yellow) 
+ &nbsp;&nbsp;&nbsp; 	 
+ ![Express](https://img.shields.io/badge/Server_Framework-Express-green) 
 
-The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
+## Table of Contents
 
-Offline Functionality:
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Screenshots](#screenshots)
+* [Built With](#built-with)
 
-  * Enter deposits offline
-
-  * Enter expenses offline
-
-When brought back online:
-
-  * Offline entries should be added to tracker.
 
 ## User Story
 AS AN avid traveller
@@ -23,39 +24,43 @@ SO THAT my account balance is accurate when I am traveling
 
 Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
 
+## Description
 
-## Acceptance Criteria
-GIVEN a user is on Budget App without an internet connection
-WHEN the user inputs a withdrawal or deposit
-THEN that will be shown on the page, and added to their transaction history when their connection is back online.
+Fitness Time is a full-stack application that allows users to plan and record details about their exercise routines.  These workouts are saved in the mongoDB database and graphs are created using this information to display workout details for the previous week.
 
-- - -
+ * Here is the link to the deployed app on Heroku : https://fitness-time.herokuapp.com/
 
-## Commit Early and Often
+## Installation
 
-* One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+ * Clone this repository from Github from the command line by typing:  
+   `git clone https://github.com/alexcoulter/fitness-time.git`
+  * Navigate to the 'fitness-time' folder by typing:  
+  `cd fitness-time` 
+  * Install dependencies by typing:  
+   `npm install`
+  * Run this application by typing:   
+  `node server` 
+  * Open this application in your browser by typing the url:
+  `http://localhost:3000/`
+  
+  ## Usage
+  
+  * Once you have this application running on your local machine or Heroku you will be directed to the landing page. Here you will see information from your last workout.  If you want to see graphs from your last week's exercises, then click the link in the top-left corner that says 'Stats and Graphs'.  This will redirect you to the stats page.  To go back to the main page click the link in the top-left corner that says 'Fitness tracker'.  Here you can choose whether to continue your last workout or start a new one.  Use the textboxes to input your exercise details and if you're done click the button that says 'Complete'.  If you want to add another exercise, click the button that says 'Add Exercise'.
+  
+  ## Screenshots
+* Landing Page
+<div align="center"><img  alt= "Screenshot of Landing Page" src= "./public/main.jpg" width="600px" /></div>
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
+* Inputting Exercise
+<div align="center"><img  alt= "Screenshot of the sidebar" src= "./public/exercise.jpg" width="600px" /></div>
 
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
+* Statistics Page
+<div align="center"><img  alt= "Screenshot of Questionaire" src= "./public/graphs.jpg" width="600px" /></div>
 
-* Follow these guidelines for committing:
+   
+   ## Built With  
 
-  * Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
-
-  * Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
-
-  * Don't commit half done work, for the sake of your collaborators (and your future self!)
-
-  * Test your application before you commit to ensure functionality at every step in the development process
-
-* We would like you to have well over 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-* You are required to submit the following:
-
-  * the URL to the deployed application
-
-  * the URL to the Github repository
-
+* **Node.js** -  JavaScript environment that executes JS code without needing a web browser
+* **Express** - Web application framework that helped with routes and requests
+* **MongoDB** - Flexible NoSQL database program
+* **Mongoose** - Object modeling library for MongoDB
