@@ -4,13 +4,15 @@
  ![MongoDB](https://img.shields.io/badge/Database-MongoDB-orange) &nbsp;&nbsp;&nbsp; 	 
  ![Mongoose](https://img.shields.io/badge/Database_Management-Mongoose-yellow) 
  &nbsp;&nbsp;&nbsp; 	 
+ ![IndexedDb](https://img.shields.io/badge/Offline_Storage-IndexedDb-black) 
+ &nbsp;&nbsp;&nbsp; 	 
  ![Express](https://img.shields.io/badge/Server_Framework-Express-green) 
 
 ## Table of Contents
 
-* [Description](#description)
+* [User Story](#user-story)
+* [Business Context](#business-context)
 * [Installation](#installation)
-* [Usage](#usage)
 * [Screenshots](#screenshots)
 * [Built With](#built-with)
 
@@ -19,23 +21,18 @@
 AS AN avid traveller
 I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
 SO THAT my account balance is accurate when I am traveling
+* To check out my app on Heroku go here: https://on-offline-budget-tracker.herokuapp.com/
 
 ## Business Context
 
 Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
 
-## Description
-
-Fitness Time is a full-stack application that allows users to plan and record details about their exercise routines.  These workouts are saved in the mongoDB database and graphs are created using this information to display workout details for the previous week.
-
- * Here is the link to the deployed app on Heroku : https://fitness-time.herokuapp.com/
-
 ## Installation
 
  * Clone this repository from Github from the command line by typing:  
-   `git clone https://github.com/alexcoulter/fitness-time.git`
+   `git clone https://github.com/alexcoulter/budget-tracker.git`
   * Navigate to the 'fitness-time' folder by typing:  
-  `cd fitness-time` 
+  `cd budget-tracker` 
   * Install dependencies by typing:  
    `npm install`
   * Run this application by typing:   
@@ -43,20 +40,12 @@ Fitness Time is a full-stack application that allows users to plan and record de
   * Open this application in your browser by typing the url:
   `http://localhost:3000/`
   
-  ## Usage
-  
-  * Once you have this application running on your local machine or Heroku you will be directed to the landing page. Here you will see information from your last workout.  If you want to see graphs from your last week's exercises, then click the link in the top-left corner that says 'Stats and Graphs'.  This will redirect you to the stats page.  To go back to the main page click the link in the top-left corner that says 'Fitness tracker'.  Here you can choose whether to continue your last workout or start a new one.  Use the textboxes to input your exercise details and if you're done click the button that says 'Complete'.  If you want to add another exercise, click the button that says 'Add Exercise'.
-  
   ## Screenshots
-* Landing Page
-<div align="center"><img  alt= "Screenshot of Landing Page" src= "./public/main.jpg" width="600px" /></div>
+* Ipad Screenshot
+<div align="center"><img  alt= "Screenshot on an Ipad" src= "./public/ipadSS.jpg" width="600px" /></div>
 
-* Inputting Exercise
-<div align="center"><img  alt= "Screenshot of the sidebar" src= "./public/exercise.jpg" width="600px" /></div>
-
-* Statistics Page
-<div align="center"><img  alt= "Screenshot of Questionaire" src= "./public/graphs.jpg" width="600px" /></div>
-
+* Downloaded App Use
+<div align="center"><img  alt= "downloaded App Use" src= "./public/nativeUse.gif" width="600px" /></div>
    
    ## Built With  
 
@@ -64,3 +53,6 @@ Fitness Time is a full-stack application that allows users to plan and record de
 * **Express** - Web application framework that helped with routes and requests
 * **MongoDB** - Flexible NoSQL database program
 * **Mongoose** - Object modeling library for MongoDB
+* **IndexedDB** - Api for client-side storage of data for offline use
+* **Manifest** - provides information about a web application in a JSON text file, necessary for the web app to be downloaded and be presented to the user similarly to a native app
+* **Service Worker** - provides feature for cache api and holds static files and data locally for offline use
